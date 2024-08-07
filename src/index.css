@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #2925be;
+  --secondary-color: #1f5dd0;
+  --background-var: #0000;
+  --primary-font: #fff;
+}
+main {
+  font-family: "Roboto", sans-serif;
+}

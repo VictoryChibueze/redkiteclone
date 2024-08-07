@@ -1,0 +1,21 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar.jsx";
+
+function App() {
+  return (
+    <main>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<h1>Home</h1>} />
+          <Route path="/pool" element={<h1>Pool</h1>} />
+          <Route path="/staking" element={<h1>Staking</h1>} />
+          <Route path="/phishkite" element={<h1>Blog</h1>} />
+          <Route path="/blog" element={<h1>blog</h1>} />
+        </Routes>
+      </BrowserRouter>
+    </main>
+  );
+}
+
+export default App;
