@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { FaEthereum } from "react-icons/fa6";
 import Logo from "./Logo";
-
+import "../styles/NavBar.css";
 function NavBar() {
   return (
-    <nav>
+    <nav className="navbar">
       <Logo />
       <ul>
         <li>
@@ -21,12 +21,12 @@ function NavBar() {
         </li>
       </ul>
 
-      <div>
-        <button>
+      <div className="nav-btn">
+        <button className="eth-btn">
           <FaEthereum />
           Ethereum
         </button>
-        <button>Connect</button>
+        <button className="connect-btn">Connect</button>
       </div>
     </nav>
   );

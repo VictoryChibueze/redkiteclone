@@ -1,5 +1,6 @@
 import { GiAngelWings } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import "../styles/Logo.css";
 
 function Logo() {
   return (
