@@ -7,7 +7,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route path="/" element={<h1>Home</h1>} />
+          <Route path="/" />
           <Route path="/pool" element={<h1>Pool</h1>} />
           <Route path="/staking" element={<h1>Staking</h1>} />
           <Route path="/phishkite" element={<h1>Blog</h1>} />
