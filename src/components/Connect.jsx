@@ -6,9 +6,26 @@ function Connect() {
       <section className="connect">
         <span></span>
         <h4>Connect Wallet</h4>
-
-        <input type="checkbox" name="" id="" />
-        <label htmlFor=""></label>
+        <div className="agreement-box">
+          <input type="checkbox" name="" id="" />
+          <label htmlFor="">
+            I read and accept the Terms of Service and Privacy Policy
+          </label>
+        </div>
+        <div className="network">
+          <h5>Choose Network</h5>
+          <button>Ethereum</button>
+          <button>BSC</button>
+          <button>Polygon</button>
+          <button>Avalanche</button>
+          <button>Arbitrum</button>
+          <button>5ireChain</button>
+          <button>Sei</button>
+        </div>
+        <div className="wallet">
+          <h5>Choose Wallet</h5>
+          <button>Metamask</button>
+        </div>
       </section>
     </div>
   );
