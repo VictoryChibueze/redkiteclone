@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
+import Connect from "./components/Connect.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/blog" element={<h1>blog</h1>} />
         </Routes>
       </BrowserRouter>
+      <Connect />
     </main>
   );
 }

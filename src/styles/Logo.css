@@ -1,6 +1,17 @@
 h2 {
   color: white;
+  padding: 1.5rem;
 }
 h2 span {
   color: orange;
+}
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 40rem) {
+  h2 {
+    font-size: 2rem;
+    padding: 0;
+  }
 }
