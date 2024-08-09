@@ -16,7 +16,13 @@ function NavBar({ onOpenModal }) {
     <header className="header">
       <Logo />
       <button className="mobile-menu-icon" onClick={handleMobileMenu}>
-        {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+        {isMobileMenuOpen ? (
+          <span className="fatimes">
+            <FaTimes />
+          </span>
+        ) : (
+          <FaBars />
+        )}
       </button>
       <nav className={`navbar ${isMobileMenuOpen ? "open" : ""}`}>
         <ul>
