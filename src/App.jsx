@@ -1,12 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
+import { useState } from "react";
 import Connect from "./components/Connect.jsx";
-
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  function handleOpenModal() {
+    setIsModalOpen(!isModalOpen);
+  }
   return (
     <main>
       <BrowserRouter>
-        <NavBar />
+        <NavBar onOpenModal={handleOpenModal} />
         <Routes>
           <Route path="/" />
           <Route path="/pool" element={<h1>Pool</h1>} />
@@ -15,7 +20,7 @@ function App() {
           <Route path="/blog" element={<h1>blog</h1>} />
         </Routes>
       </BrowserRouter>
-      <Connect />
+      {isModalOpen && <Connect onOpenModal={handleOpenModal} />}
     </main>
   );
 }

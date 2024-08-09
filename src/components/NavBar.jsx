@@ -1,12 +1,24 @@
 import { Link } from "react-router-dom";
 import { FaEthereum } from "react-icons/fa6";
+import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "./Logo";
 import "../styles/NavBar.css";
-function NavBar() {
+import { useState } from "react";
+
+// import { Connect } from "../components/Connect.jsx";
+function NavBar({ onOpenModal }) {
+  const [isMobileMenuOpen, setIsMobileOpen] = useState(false);
+
+  function handleMobileMenu() {
+    setIsMobileOpen(!isMobileMenuOpen);
+  }
   return (
     <header className="header">
       <Logo />
-      <nav className="navbar">
+      <button className="mobile-menu-icon" onClick={handleMobileMenu}>
+        {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+      </button>
+      <nav className={`navbar ${isMobileMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
             <Link to="/pool" className="active">
@@ -28,7 +40,9 @@ function NavBar() {
             <FaEthereum />
             Ethereum
           </button>
-          <button className="connect-btn">Connect</button>
+          <button className="connect-btn" onClick={onOpenModal}>
+            Connect
+          </button>
         </div>
       </nav>
     </header>

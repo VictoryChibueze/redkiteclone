@@ -1,10 +1,13 @@
 import "../styles/Connect.css";
+import { MdCancel } from "react-icons/md";
 
-function Connect() {
+function Connect({ onOpenModal }) {
   return (
     <div className="overlay">
       <section className="connect">
-        <span></span>
+        <span onClick={onOpenModal}>
+          <MdCancel />
+        </span>
         <h4>Connect Wallet</h4>
         <div className="agreement-box">
           <input type="checkbox" name="" id="" />

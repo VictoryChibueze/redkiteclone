@@ -4,20 +4,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(222, 214, 214, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 100;
 }
 .connect {
-  background: rgba(26, 26, 26, 0.7);
+  background: rgba(26, 26, 26, 0.9);
   border: 1px solid #777;
   border-radius: 5px;
   z-index: 100;
   padding: 0 5rem;
-  width: 60rem;
-  height: 60%;
+  max-width: 70%;
+  height: 70%;
+}
+.connect span {
+  color: var(--primary-font);
+  font-size: 2rem;
+  float: right;
+  padding: 1.5rem 0 0 0;
 }
 .connect h4 {
   font-size: 3rem;
@@ -39,6 +45,9 @@
 .agreement-box input[type="checkbox"] {
   height: 1.5rem;
   width: 1.5rem;
+}
+.agreement-box label {
+  font-size: clamp(1.5rem, 4vw + 0.5rem, 40%);
 }
 .network h5 {
   font-size: 1.5rem;
@@ -63,5 +72,69 @@
   margin: 0 0.75rem 0.3rem 0.1rem;
   color: var(--primary-font);
 }
+
 @media only screen and (min-width: 40rem) {
+  .connect {
+    background: rgba(26, 26, 26, 0.7);
+    border: 1px solid #777;
+    border-radius: 5px;
+    z-index: 100;
+    padding: 0 5rem;
+    min-width: 40%;
+    height: 60%;
+  }
+  .connect h4 {
+    font-size: 3rem;
+    color: var(--primary-font);
+    text-align: center;
+  }
+  .connect span {
+    color: var(--primary-font);
+    font-size: 2.5rem;
+    float: right;
+    padding: 1.5rem 0 0 0;
+  }
+  .connect span:hover {
+    color: #999;
+  }
+
+  .agreement-box {
+    color: var(--primary-font);
+    display: flex;
+    font-size: 1.5rem;
+
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid #555;
+
+    padding: 0 0 0 3rem;
+    gap: 1.5rem;
+  }
+  .agreement-box input[type="checkbox"] {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .network h5 {
+    font-size: 1.5rem;
+    color: var(--primary-font);
+  }
+
+  .network button {
+    border: none;
+    padding: 1rem;
+    background-color: rgba(77, 76, 76, 0.5);
+    margin: 0 0.75rem 0.3rem 0.1rem;
+    color: var(--primary-font);
+  }
+  .wallet h5 {
+    font-size: 1.75rem;
+    color: var(--primary-font);
+  }
+  .wallet button {
+    border: none;
+    padding: 3rem 3rem;
+    background-color: rgba(77, 76, 76, 0.5);
+    margin: 0 0.75rem 0.3rem 0.1rem;
+    color: var(--primary-font);
+  }
 }
