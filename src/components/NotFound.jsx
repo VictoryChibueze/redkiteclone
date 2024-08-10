@@ -9,7 +9,7 @@ function NotFound() {
           justifyContent: "center",
         }}
       >
-        Page Not Found⛔💀
+        Page Not Found⛔
       </h2>
     </section>
   );

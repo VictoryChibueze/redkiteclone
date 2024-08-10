@@ -38,8 +38,8 @@ function HeroSection() {
           Get Notified
         </button>
       </div>
-      <div>
-        <p>Supported exchanges to buy $PKF</p>
+      <p className="sponsor-head">Supported exchanges to buy $PKF</p>
+      <div className="sponsors">
         <button className="uniswap">Uniswap</button>
         <button className="gate">Gate.io</button>
         <button className="ascend">AscendEX</button>
