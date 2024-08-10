@@ -1,13 +1,14 @@
 .header {
   background: linear-gradient(
     to left,
-    var(--background-var),
+    rgba(0, 0, 0, 0.8),
     var(--primary-color)
   );
   display: flex;
   height: 5rem;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #666;
 }
 
 .navbar {
@@ -82,7 +83,7 @@
 }
 .mobile-menu-icon {
   font-size: 2rem;
-  color: var(--primary-color);
+  color: var(--primary-font);
   background: none;
   border: none;
   cursor: pointer;
@@ -140,12 +141,13 @@
   }
   .navbar ul a {
     text-decoration: none;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    font-weight: 400;
   }
-  .active {
+  /* .active {
     padding-bottom: 1.25rem;
     border-bottom: 4px solid orange;
-  }
+  } */
   .eth-btn {
     color: var(--primary-font);
     padding: 0.5rem 1.5rem;

@@ -1,0 +1,20 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, rgb(30, 27, 118), rgba(0, 0, 0, 0.8));
+  /* margin-top: -1.2rem; */
+  padding: 1rem;
+  height: 90vh;
+}
+
+.hero-section h1 {
+  color: var(--primary-font);
+  font-size: 4rem;
+}
+.hero-section .vision {
+  color: #f1f4fa;
+  text-align: center;
+  font-size: 1.55rem;
+}
