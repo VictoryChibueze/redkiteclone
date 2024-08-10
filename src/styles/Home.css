@@ -4,17 +4,128 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(to bottom, rgb(30, 27, 118), rgba(0, 0, 0, 0.8));
-  /* margin-top: -1.2rem; */
+
   padding: 1rem;
   height: 90vh;
 }
 
 .hero-section h1 {
   color: var(--primary-font);
-  font-size: 4rem;
+  font-size: 3rem;
+  margin: 0;
 }
 .hero-section .vision {
   color: #f1f4fa;
   text-align: center;
   font-size: 1.55rem;
+}
+
+.hero-section .sponsorship {
+  display: flex;
+  justify-content: space-evenly;
+}
+.sponsorship p {
+  color: var(--primary-font);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  color: #d1def6;
+}
+
+.sponsorship p span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #edf1f8;
+}
+
+.hero-btn {
+  display: block;
+}
+.hero-btn .btn-pools {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem 4rem;
+  background-color: rgb(90, 90, 244);
+  border: none;
+  color: var(--primary-font);
+}
+.hero-btn .btn-notify {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem 3.5rem;
+  margin-top: 1rem;
+  background-color: transparent;
+  color: var(--primary-font);
+  border: 1px solid var(--primary-font);
+}
+@media only screen and (min-width: 40rem) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      to bottom,
+      rgb(30, 27, 118),
+      rgba(0, 0, 0, 0.8)
+    );
+    /* margin-top: -1.2rem; */
+    padding: 1rem;
+    height: 90vh;
+  }
+
+  .hero-section h1 {
+    color: var(--primary-font);
+    font-size: 4rem;
+  }
+  .hero-section .vision {
+    color: #f1f4fa;
+    text-align: center;
+    font-size: 1.55rem;
+  }
+
+  .hero-section .sponsorship {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .sponsorship p {
+    color: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    color: #d1def6;
+  }
+
+  .sponsorship p span {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #edf1f8;
+  }
+  .hero-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .hero-btn .btn-notify {
+    padding: 0.7rem 2rem;
+    margin: 0;
+  }
+  .hero-btn .btn-notify:hover {
+    background-color: rgba(76, 76, 77, 0.5);
+  }
+  .hero-btn .btn-pools {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.7rem 2rem;
+  }
+  .hero-btn .btn-pools:hover {
+    background-color: rgb(29, 29, 219);
+  }
 }

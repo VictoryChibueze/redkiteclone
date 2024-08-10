@@ -29,11 +29,11 @@ function HeroSection() {
           <span>+2,996.4%</span>ATH AVG ROI
         </p>
       </div>
-      <div>
-        <button>
+      <div className="hero-btn">
+        <button className="btn-pools">
           See Pools <FaArrowRightLong />
         </button>
-        <button>
+        <button className="btn-notify">
           <FaTelegramPlane />
           Get Notified
         </button>
