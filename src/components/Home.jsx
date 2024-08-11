@@ -73,8 +73,8 @@ function TokenSales() {
           Earn high yield by staking PKF, LP-PKF or join other attractive
           staking pools from IDO projects on Red Kite
         </p>
-        <div>
-          <div>
+        <div className="staking-pool">
+          <div className="container">
             <h4>30 Days Staking </h4>
             <p>With IDO</p>
             <p>
@@ -86,12 +86,14 @@ function TokenSales() {
             <p>
               Withdrawal delay time <span>8 days</span>
             </p>
-            <button>
-              Discover
-              <GoArrowRight />
-            </button>
+            <div className="discover-btn__container">
+              <button className="discover-btn">
+                Discover
+                <GoArrowRight />
+              </button>
+            </div>
           </div>
-          <div>
+          <div className="container">
             <h4>30 Days Staking </h4>
             <p>With IDO</p>
             <p>
@@ -103,12 +105,14 @@ function TokenSales() {
             <p>
               Withdrawal delay time <span>8 days</span>
             </p>
-            <button>
-              Discover
-              <GoArrowRight />
-            </button>
+            <div className="discover-btn__container">
+              <button className="discover-btn">
+                Discover
+                <GoArrowRight />
+              </button>
+            </div>
           </div>
-          <div>
+          <div className="container">
             <h4>30 Days Staking </h4>
             <p>With IDO</p>
             <p>
@@ -120,10 +124,12 @@ function TokenSales() {
             <p>
               Withdrawal delay time <span>8 days</span>
             </p>
-            <button>
-              Discover
-              <GoArrowRight />
-            </button>
+            <div className="discover-btn__container">
+              <button className="discover-btn">
+                Discover
+                <GoArrowRight />
+              </button>
+            </div>
           </div>
         </div>
       </section>
