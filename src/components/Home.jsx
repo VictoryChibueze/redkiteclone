@@ -47,4 +47,8 @@ function HeroSection() {
     </section>
   );
 }
+
+function TokenSales() {
+  return <section></section>;
+}
 export default Home;
