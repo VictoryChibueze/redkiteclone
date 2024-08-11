@@ -11,7 +11,7 @@
   z-index: 100;
 }
 .connect {
-  background: rgba(26, 26, 26, 0.9);
+  background: #242424;
   border: 1px solid #777;
   border-radius: 5px;
   z-index: 100;
@@ -75,7 +75,7 @@
 
 @media only screen and (min-width: 40rem) {
   .connect {
-    background: rgba(26, 26, 26, 0.7);
+    background: #242424;
     border: 1px solid #777;
     border-radius: 5px;
     z-index: 100;
@@ -132,7 +132,7 @@
   }
   .wallet button {
     border: none;
-    padding: 3rem 3rem;
+    padding: 2.5rem 3rem;
     background-color: rgba(77, 76, 76, 0.5);
     margin: 0 0.75rem 0.3rem 0.1rem;
     color: var(--primary-font);

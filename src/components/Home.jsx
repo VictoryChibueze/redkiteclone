@@ -1,11 +1,13 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
+import { GoArrowRight } from "react-icons/go";
 import "../styles/Home.css";
 
 function Home() {
   return (
     <>
       <HeroSection />
+      <TokenSales />
     </>
   );
 }
@@ -49,6 +51,83 @@ function HeroSection() {
 }
 
 function TokenSales() {
-  return <section></section>;
+  return (
+    <section className="tokensales">
+      <div className="tokensales-mission">
+        <h2>Token Sale Launchpad</h2>
+        <p>
+          Gain early access to public and special token sales at a lower price
+          before they hit the market
+        </p>
+
+        <div className="btn-join">
+          <button>
+            Join now <GoArrowRight />
+          </button>
+        </div>
+      </div>
+
+      <section className="IDO-section">
+        <h3>Staking Pool</h3>
+        <p>
+          Earn high yield by staking PKF, LP-PKF or join other attractive
+          staking pools from IDO projects on Red Kite
+        </p>
+        <div>
+          <div>
+            <h4>30 Days Staking </h4>
+            <p>With IDO</p>
+            <p>
+              APR <span>1%</span>
+            </p>
+            <p>
+              Lock-up term <span>30 days</span>
+            </p>
+            <p>
+              Withdrawal delay time <span>8 days</span>
+            </p>
+            <button>
+              Discover
+              <GoArrowRight />
+            </button>
+          </div>
+          <div>
+            <h4>30 Days Staking </h4>
+            <p>With IDO</p>
+            <p>
+              APR <span>1%</span>
+            </p>
+            <p>
+              Lock-up term <span>30 days</span>
+            </p>
+            <p>
+              Withdrawal delay time <span>8 days</span>
+            </p>
+            <button>
+              Discover
+              <GoArrowRight />
+            </button>
+          </div>
+          <div>
+            <h4>30 Days Staking </h4>
+            <p>With IDO</p>
+            <p>
+              APR <span>1%</span>
+            </p>
+            <p>
+              Lock-up term <span>30 days</span>
+            </p>
+            <p>
+              Withdrawal delay time <span>8 days</span>
+            </p>
+            <button>
+              Discover
+              <GoArrowRight />
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+  );
 }
 export default Home;

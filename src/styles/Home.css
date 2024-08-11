@@ -109,6 +109,59 @@
   color: white;
   background-color: rgb(66, 66, 230);
 }
+
+.tokensales {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgb(30, 27, 118));
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tokensales-mission {
+  text-align: center;
+}
+.tokensales-mission h2 {
+  padding: 0;
+  font-size: 2.45rem;
+  display: block;
+  margin: 0 auto;
+  color: #edf1f8;
+}
+
+.tokensales-mission p {
+  color: #d1def6;
+  font-size: 1.45rem;
+}
+.btn-join {
+  display: flex;
+  justify-content: center;
+}
+.btn-join button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-font);
+  background-color: rgb(90, 90, 244);
+  border: none;
+  padding: 0.85rem 1.75rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  margin: 3rem 0;
+}
+.btn-join button:hover {
+  background-color: rgba(90, 90, 244, 0.8);
+}
+.IDO-section h3 {
+  color: var(--primary-font);
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 0;
+}
+.IDO-section > p {
+  text-align: center;
+  color: #d1def6;
+  font-size: 1.3rem;
+}
 @media only screen and (min-width: 40rem) {
   .hero-section {
     display: flex;
@@ -198,5 +251,14 @@
     padding: 1rem 0.5rem;
     flex: 0 1 10rem;
     border-radius: 0.3rem;
+  }
+  .tokensales-mission h2 {
+    font-size: 3.5rem;
+  }
+  .btn-join button {
+    padding: 0.95rem 1.95rem;
+  }
+  .IDO-section h3 {
+    font-size: 3.5rem;
   }
 }
