@@ -1,6 +1,11 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-import { FaTelegramPlane } from "react-icons/fa";
 import { GoArrowRight } from "react-icons/go";
+import { FaAtom, FaAward, FaTelegramPlane } from "react-icons/fa";
+import { FaBalanceScale } from "react-icons/fa";
+import { IoDiamondOutline } from "react-icons/io5";
+import { LuCalendarDays } from "react-icons/lu";
+import { ImHammer2 } from "react-icons/im";
+
 import "../styles/Home.css";
 
 function Home() {
@@ -8,6 +13,7 @@ function Home() {
     <>
       <HeroSection />
       <TokenSales />
+      <Features />
     </>
   );
 }
@@ -133,6 +139,109 @@ function TokenSales() {
           </div>
         </div>
       </section>
+      <div className="btn-stake">
+        <button>
+          Stake now <GoArrowRight />
+        </button>
+      </div>
+    </section>
+  );
+}
+
+function Features() {
+  return (
+    <section className="features">
+      <div className="features-heading">
+        <h3>Red Kite Features</h3>
+        <p>Smart Launchpad with AI implementation and DeFi focus</p>
+      </div>
+      <div className="features-container">
+        <div>
+          <div className="feature-logo__container">
+            <span>
+              <FaAtom />
+            </span>
+          </div>
+          <h4>Multi-chain, flexible options</h4>
+          <p>
+            Red Kite offers one the most diverse forms of blockchain support,
+            aiming to create a one-stop location for both investors and
+            startups. We currently supports the following chains: Ethereum,
+            Binance Smart Chain, Polygon, Avalanche, and all EVM compatible
+            chains.
+          </p>
+        </div>
+        <div>
+          <div className="feature-logo__container">
+            <span>
+              <FaAward />
+            </span>
+          </div>
+
+          <h4>Hand-picked projects</h4>
+          <p>
+            We hand-pick projects cautiously, scrutinize and verify the project
+            team’s origin and legitimacy, innovation of idea, and their capacity
+            to execute their vision
+          </p>
+        </div>
+        <div>
+          <div className="feature-logo__container">
+            <span>
+              <IoDiamondOutline />
+            </span>
+          </div>
+          <h4>Reputation system</h4>
+          <p>
+            Our loyal members can earn incentives in the form of Red Kite points
+            from our Reputation system for every $PKF placed in addition to the
+            benefits of participating in profitable token sales and earning APY
+            from the staking mechanism.
+          </p>
+        </div>
+        <div>
+          <div className="feature-logo__container">
+            <span>
+              <FaBalanceScale />
+            </span>
+          </div>
+          <h4>Fairness</h4>
+          <p>
+            We understand that opportunities should be delivered fairly and
+            efficiently. Red Kite's lane-based swap system ensures everybody has
+            a chance to join accordingly based on their tier without having to
+            resort to gas war.
+          </p>
+        </div>
+        <div>
+          <div className="feature-logo__container">
+            <span>
+              <LuCalendarDays />
+            </span>
+          </div>
+          <h4>Integrated Vesting Schedule</h4>
+          <p>
+            Red Kite goes with a Distribution Portal for projects to vest their
+            sold tokens. This feature can also be used for pre-sale or post-sale
+            secondary offerings.
+          </p>
+        </div>
+        <div>
+          <div className="feature-logo__container">
+            <span>
+              <ImHammer2 />
+            </span>
+          </div>
+          <h4>Advanced Features</h4>
+          <p>
+            Red Kite constantly places a high priority on safeguarding and
+            preserving the benefits of users with an appropriate refund policy.
+            In the future, Red Kite will continuously develop top-notch features
+            like project incubation, DAO model application, AI technologies, and
+            many more to deliver robust user experience.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
