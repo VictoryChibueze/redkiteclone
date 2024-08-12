@@ -1,0 +1,76 @@
+footer {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgb(30, 27, 118));
+  padding: 1rem;
+}
+footer .footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-font);
+}
+
+.footer-logo p {
+  text-align: center;
+  margin-top: -1.5rem;
+  font-size: 1.2rem;
+  width: 70%;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1.1rem;
+}
+.social-media li {
+  list-style: none;
+  background-color: rgba(255, 165, 0, 0.8);
+  border-radius: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-media li:hover {
+  background-color: orange;
+}
+.social-media li a {
+  text-decoration: none;
+  color: var(--primary-font);
+  font-size: 1.4rem;
+}
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: var(--primary-font);
+}
+.copyright ul {
+  display: flex;
+}
+.copyright ul li {
+  list-style: none;
+  padding: 0 0.2rem;
+}
+.copyright p {
+  order: 2;
+  color: rgba(249, 248, 248, 0.8);
+  font-weight: 700;
+  cursor: pointer;
+}
+.copyright ul li a {
+  color: rgb(243, 243, 243);
+
+  font-weight: 700;
+}
+.copyright ul li a:hover {
+  color: rgba(249, 248, 248, 0.8);
+}
+@media only screen and (min-width: 40rem) {
+  .copyright {
+    justify-content: space-evenly;
+  }
+  .copyright p {
+    order: -1;
+  }
+}

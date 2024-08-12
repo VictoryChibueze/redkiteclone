@@ -5,6 +5,8 @@ import { FaBalanceScale } from "react-icons/fa";
 import { IoDiamondOutline } from "react-icons/io5";
 import { LuCalendarDays } from "react-icons/lu";
 import { ImHammer2 } from "react-icons/im";
+import { GrStatusGood } from "react-icons/gr";
+import Footer from "./Footer";
 
 import "../styles/Home.css";
 
@@ -14,6 +16,8 @@ function Home() {
       <HeroSection />
       <TokenSales />
       <Features />
+      <Banner />
+      <Footer />
     </>
   );
 }
@@ -240,6 +244,43 @@ function Features() {
             like project incubation, DAO model application, AI technologies, and
             many more to deliver robust user experience.
           </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Banner() {
+  return (
+    <section className="banner-section">
+      <div className="banner-container">
+        <div>
+          <h2>Want to launch your project on Red Kite?</h2>
+
+          <button>Apply to launch</button>
+        </div>
+
+        <div>
+          <ul>
+            <li>
+              <span>
+                <GrStatusGood />
+              </span>
+              Unique fictionless token sale process
+            </li>
+            <li>
+              <span>
+                <GrStatusGood />
+              </span>
+              Tier-1 marketing partners and support
+            </li>
+            <li>
+              <span>
+                <GrStatusGood />
+              </span>
+              Security audit, Pentest & Incident
+            </li>
+          </ul>
         </div>
       </div>
     </section>

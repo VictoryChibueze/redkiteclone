@@ -225,13 +225,30 @@
 .features-container {
   display: grid;
   grid-template-columns: 1fr;
+  width: 70%;
+  margin: auto;
+  grid-row-gap: 3rem;
+}
+.features-container h4 {
+  color: var(--primary-font);
+  text-align: center;
+  font-size: 1.75rem;
+}
+.features-container p {
+  color: rgba(249, 248, 248, 0.8);
+  text-align: center;
+  font-size: 1.2rem;
+  width: 85%;
+  margin: auto;
 }
 .features-heading {
   color: var(--primary-font);
+  margin: 5rem 0;
 }
 .features-heading h3 {
   text-align: center;
   font-size: 2.4rem;
+  margin: 0;
 }
 .features p {
   text-align: center;
@@ -243,15 +260,53 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5rem;
-  width: 5rem;
-  font-size: 3rem;
+  height: 4rem;
+  width: 4rem;
+  font-size: 2.5rem;
   border-radius: 1rem;
 }
 .feature-logo__container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.banner-section {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+}
+.banner-container {
+  background: linear-gradient(to bottom, rgb(30, 27, 118), rgba(0, 0, 0, 0.8));
+  width: 80%;
+  margin: auto;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.banner-container h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+}
+.banner-container ul li {
+  color: var(--primary-font);
+  list-style: none;
+  padding: 0.2rem 0;
+}
+.banner-container button {
+  width: 50%;
+  display: block;
+  margin: auto;
+  background-color: rgb(90, 90, 244);
+  color: var(--primary-font);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0;
+}
+.banner-container button:hover {
+  background-color: rgba(90, 90, 244, 0.9);
+}
+.banner-container span {
+  margin-right: 3px;
 }
 @media only screen and (min-width: 40rem) {
   .hero-section {
@@ -375,5 +430,27 @@
   .features-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .features-container p {
+    font-size: 1.3rem;
+  }
+  .banner-container {
+    width: 70%;
+    border-radius: 1rem;
+  }
+  .banner-section {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    display: flex;
+  }
+  .banner-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .banner-container button {
+    margin: 2rem auto;
+  }
+  .banner-container ul li {
+    font-size: 1.23rem;
   }
 }
